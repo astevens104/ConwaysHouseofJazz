@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conway's House of Jazz</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a8a120cec2.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -20,19 +21,13 @@
                 <a href="./DGMenu.html" target="_blank" class="link__hover-effect">Menu
             </a></li>
             <li class="nav__link">
-                <a href="#" class="link__hover-effect">Music
+                <a href="#music" class="link__hover-effect">Music
+            </a></li>          
+            <li class="nav__link dropdown">
+                <a href="https://www.opentable.com/" target="_blank" class="link__hover-effect">Reservations
             </a></li>
             <li class="nav__link">
-                <a href="#" class="link__hover-effect">Reservations</a>
-            <ul class="reservation__menu dropdown">
-                <div class="dropdown__content">
-                <li class="reservation__option"><a href="https://restaurant.opentable.com/">OpenTable</a></li>
-                <li class="reservation__option"><a href="#">Book a Table</a></li>
-                </div>
-            </ul>
-            </li>
-            <li class="nav__link">
-                <a href="#" class="link__hover-effect">Contact Us
+                <a href="#contact" class="link__hover-effect">Contact Us
             </a></li>
         </ul>
     </nav>
@@ -70,5 +65,56 @@
             </div>
         </div>
     </section>
+
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact__wrapper">
+                    <h2 class="contact__title">Contact Us</h2>
+                    <h3 class="contact__sub-title">Hope to see you soon!</h3>
+                    <form id="contact__form">
+                        <div class="form__item">
+                            <label for="" class="form__item--label">Name</label>
+                            <input type="text" name="user_name" class="input" required></input>
+                        </div>
+                        <div class="form__item">
+                            <label for="" class="form__item--label">Phone Number</label>
+                            <input type="text" name="user_number" class="input" required></input>
+                        </div>
+                        <div class="form__item">
+                            <label for="" class="form__item--label">Email</label>
+                            <input type="email" name="user_email" class="input" required></input>
+                        </div>
+                        <div class="form__item">
+                            <label for="" class="form__item--label">Message</label>
+                            <textarea type="text" name="message" class="input" required></textarea>
+                        </div>
+                        <button id="contact__submit" class="form__submit">Let Us Hear From You</button>
+                    </form>
+                    <div class="modal__overlay modal__overlay--loading">
+                        <i class="fas fa-spinner"></i>
+                    </div>
+                    <div class="modal__overlay modal__overlay--success">
+                        Thanks for reaching out! We will see you soon!
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
+
+<footer>
+    <div class="container">
+        <div class="row footer__row">
+            <div class="footer__copyright">&copy 2024 Conways House of Jazz</div>
+            <div class="footer__social--list">
+                <a href="" target="_blank" class=
+                "footer__social--link
+                link__hover--efect">
+                <i class="fab fa-x-twitter"></i>
+            </a>
+            </div>
+        </div>
+    </div>
+</footer>
 </html>
