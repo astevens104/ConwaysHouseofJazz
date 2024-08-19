@@ -150,6 +150,10 @@ LANDING
     margin: 16px 0;
 }
 
+.business__name:hover {
+    color: #4b0082;
+}
+
 .about__img--wrapper {
     margin: 0 16px;
 }
