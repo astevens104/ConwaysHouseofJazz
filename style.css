@@ -69,11 +69,14 @@ label {
 }
 
 .container {
-    margin: 16px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .row {
-    padding: 0 20px;
+    width: 100%;
+    max-width: 800px;
 }
 
 .purple {
@@ -131,35 +134,33 @@ LANDING
 
 */
 
-.about__wrapper {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    max-width: 1200px;
-}
-
-.about__description {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 8px;
-}
-
-.about__title {
+.heading {
+    padding: 24px 0;
     text-align: center;
-    margin: 16px 0;
 }
 
-.business__name:hover {
-    color: #4b0082;
+.splash__wrapper {
+    display: flex;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding-top: 24px;
+    border-radius: 20px;
+    position: relative;
 }
 
-.about__img--wrapper {
-    margin: 0 16px;
+.splash_wrapper:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #1c1d25;
 }
 
-.about__img {
-    width: 800px;
+.splash__img {
+    width: 100%;
 }
 
 /* 
