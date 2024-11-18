@@ -134,33 +134,72 @@ LANDING
 
 */
 
+.heading__wrapper {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 32px;
+}
+
 .heading {
     padding: 24px 0;
-    text-align: center;
+}
+
+.splash {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
 }
 
 .splash__wrapper {
     display: flex;
     width: 100%;
-    max-width: 600px;
-    margin: 0 auto;
+    max-width: 800px;
     padding-top: 24px;
-    border-radius: 20px;
-    position: relative;
-}
-
-.splash_wrapper:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: #1c1d25;
+    align-items: center;
+    justify-content: center;
 }
 
 .splash__img {
+    width: 80%;
+    border-radius: 8px;
+}
+
+.splash__sub-divider {
+    display: flex;
+    margin: 24px 0;
+}
+
+.splash-left {
+    padding: 16px;
     width: 100%;
+    max-width: 360px;
+}
+
+.splash__text--left {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.5;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.splash-right {
+    padding: 16px;
+    width: 100%;
+    max-width: 360px;
+    justify-content: center;
+    align-items: center;
+}
+
+.splash__highlights {
+    font-size: 24px;
+    font-weight: bold;
 }
 
 /* 
@@ -218,7 +257,7 @@ CONTACT PAGE
 
 .email:hover {
     color: #4b0082;
-    font-size: 31px;
+    font-size: 30px;
     transition: all 300ms ease;
 }
 

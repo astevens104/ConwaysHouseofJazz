@@ -1,122 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Conway's House of Jazz</title>
-    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="style.css" />
     <script src="index.js"></script>
-    <script src="https://kit.fontawesome.com/a8a120cec2.js" crossorigin="anonymous"></script>
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-</script>
-<script type="text/javascript">
-   (function(){
-      emailjs.init({
-        publicKey: "pLloMiUmOyGNkTeZM",
-      });
-   })();
-</script>
-</head>
+    <script
+      src="https://kit.fontawesome.com/a8a120cec2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "pLloMiUmOyGNkTeZM",
+        });
+      })();
+    </script>
+  </head>
 
-<body>
-    <nav> 
-        <figure>
-        <img id="logo__img" src="./Assets/logo.png" alt="">
-    </figure>   
-        <ul class="nav__links">
-            <li class="nav__link">
-                <a href="#" class="link__hover-effect">About
-                </a></li>
-            <li class="nav__link">
-                <a href="./DGMenu.html" target="_blank" class="link__hover-effect">Menu
-            </a></li>
-            <li class="nav__link">
-                <a href="#music" class="link__hover-effect">Music
-            </a></li>          
-            <li class="nav__link dropdown">
-                <a href="https://www.opentable.com/" target="_blank" class="link__hover-effect">Reservations
-            </a></li>
-            <li class="nav__link">
-                <a href="#contact" class="link__hover-effect">Contact Us
-            </a></li>
-        </ul>
+  <body>
+    <nav>
+      <figure>
+        <img id="logo__img" src="./Assets/logo.png" alt="" />
+      </figure>
+      <ul class="nav__links">
+        <li class="nav__link">
+          <a
+            href="https://jazzobserver.com/the-origins-of-jazz/"
+            target="_blank"
+            class="link__hover-effect"
+            >About
+          </a>
+        </li>
+        <li class="nav__link">
+          <a href="./DGMenu.html" target="_blank" class="link__hover-effect"
+            >Menu
+          </a>
+        </li>
+        <li class="nav__link">
+          <a href="#music" class="link__hover-effect">Music </a>
+        </li>
+        <li class="nav__link dropdown">
+          <a
+            href="https://www.opentable.com/"
+            target="_blank"
+            class="link__hover-effect"
+            >Reservations
+          </a>
+        </li>
+        <li class="nav__link">
+          <a href="#contact" class="link__hover-effect">Contact Us </a>
+        </li>
+      </ul>
     </nav>
 
     <section id="header">
-        <div class="container">
-            <div class="row">
-                <h1 class="heading">Welcome to Conway's House of Jazz!</h1>
-                <div class="splash">
-                    <div class="splash__wrapper">
-                        <img src="./Assets/JazzImpression.jpg" class="splash__img" alt="">
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row">
+            <div class="heading__wrapper">
+          <h1 class="heading">Welcome to Conway's House of Jazz!</h1>
+          </div>
+          <div class="splash">
+            <div class="splash__wrapper">
+              <img
+                src="./Assets/JazzImpression.jpg"
+                class="splash__img"
+                alt=""
+              />
             </div>
+            <div class="splash__sub-divider">
+              <div class="splash-left">
+                <p class="splash__text--left">
+                  Your newest jazz musical venue in the Gladstone corridor!
+                </p>
+              </div>
+
+              <div class="splash-right">
+                <p class="splash__highlights">
+                  Great Food <br />
+                  Hot Jazz <br />
+                  Family - Owned
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
-    
+
     <section id="music">
-        <div class="container">
-            <div class="row">
-                <div class="music__wrapper">
-                    <h1 class="music__title">Who's Playing</h1>   
-                    <div class="calendar__wrapper">
-                        
-                        <div class="calendar">
-                            <iframe src="https://calendar.google.com/calendar/embed?src=agstevens104%40gmail.com&ctz=America%2FLos_Angeles" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-                        </div>
-                    </div>
-                </div>    
+      <div class="container">
+        <div class="row">
+          <div class="music__wrapper">
+            <h1 class="music__title">Upcoming Talent!</h1>
+            <div class="calendar__wrapper">
+              <div class="calendar">
+                <iframe
+                  src="https://calendar.google.com/calendar/embed?src=b7185f1c90beb94ea71c70791b39b3e3ad582bc9230464f10a9a83b85a7146ec%40group.calendar.google.com&ctz=America%2FLos_Angeles"
+                  style="border: 0"
+                  width="800"
+                  height="600"
+                  frameborder="0"
+                  scrolling="no"
+                ></iframe>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <section id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contact__wrapper">
-                    <h2 class="contact__title">Contact Us</h2>
-                    <h3>(123) 456-7890</h3>
-                    <a class="email" href="mailto:conwayshojpdx@gmail.com">conwayshojpdx@gmail.com</a>
-                </div>
-            </div>
+      <div class="container">
+        <div class="row">
+          <div class="contact__wrapper">
+            <h2 class="contact__title">Contact Us</h2>
+            <h3>(123) 456-7890</h3>
+            <a class="email" href="mailto:conwayshojpdx@gmail.com"
+              >conwayshojpdx@gmail.com</a
+            >
+          </div>
         </div>
+      </div>
     </section>
-</body>
+  </body>
 
-<footer>
+  <footer>
     <div class="container">
-        <div class="row footer__row">
-            <div class="footer__copyright">&copy 2024 Conways House of Jazz</div>
-            <div class="footer__social--list">
-                <a href="https://x.com/" target="_blank" class=
-                "footer__social--link
-                link__hover--efect">
-                <i class="fab fa-x-twitter"></i>
-            </a>
-                <a href="https://www.facebook.com/" target="_blank" class=
-                "footer__social--link
-                link__hover--efect">
-                <i class="fab fa-facebook-f"></i>
-            </a>
-                <a href="https://www.yelp.com/" target="_blank" class=
-                "footer__social--link
-                link__hover--efect">
-                <i class="fab fa-yelp"></i>
-            </a>
-                <a href="https://www.google.com/" target="_blank" class=
-                "footer__social--link
-                link__hover--efect">
-                <i class="fab fa-google"></i>
-            </a>
-                <a href="https://www.instagram.com/" target="_blank" class=
-                "footer__social--link
-                link__hover--efect">
-                <i class="fab fa-instagram"></i>
-            </a>
-            </div>
+      <div class="row footer__row">
+        <div class="footer__copyright">&copy 2024 Conways House of Jazz</div>
+        <div class="footer__social--list">
+          <a
+            href="https://x.com/"
+            target="_blank"
+            class="footer__social--link link__hover--efect"
+          >
+            <i class="fab fa-x-twitter"></i>
+          </a>
+          <a
+            href="https://www.facebook.com/"
+            target="_blank"
+            class="footer__social--link link__hover--efect"
+          >
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a
+            href="https://www.yelp.com/"
+            target="_blank"
+            class="footer__social--link link__hover--efect"
+          >
+            <i class="fab fa-yelp"></i>
+          </a>
+          <a
+            href="https://www.google.com/"
+            target="_blank"
+            class="footer__social--link link__hover--efect"
+          >
+            <i class="fab fa-google"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/"
+            target="_blank"
+            class="footer__social--link link__hover--efect"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
         </div>
+      </div>
     </div>
-</footer>
+  </footer>
 </html>
