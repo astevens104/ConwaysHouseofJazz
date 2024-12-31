@@ -36,6 +36,12 @@ p {
     text-align: center;
 }
 
+h4 {
+    color: #006b3c;
+    font-size: 16px;
+    font-weight: 400;
+}
+
 a {
     text-decoration: none;
 }
@@ -128,6 +134,50 @@ nav {
     transition: 300ms;
 }
 
+
+.drop__btn {
+    padding: 0 8px;
+    list-style-type: none;
+    color: #4b0082;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+}
+
+.dropdown:hover {
+    text-decoration: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown__content {
+    display: none;
+    position: absolute;
+    background: none;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown__content a {
+    color: #4b0082;
+    padding: 16px 8px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown__content {
+    display: block;
+}
+
+.dropdown__list--item:hover {
+    color: #006b3c;
+    text-decoration: underline;
+}
+
 /* 
 
 LANDING
@@ -208,6 +258,48 @@ MUSIC
 
 */
 
+.slider {
+    margin: 0 auto;
+    width: 80%;
+    max-width: 800px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rbga(0, 0, 0, 0.1);
+    margin-bottom: 16px;
+}
+
+.slide {
+    width: 100%;
+    flex: 1;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+@keyframes slideAnimation {
+    0% {transform: translateX(0); }
+    20% {transform: translateX(-33%);}
+    25% {transform: translateX(-33%);}
+    50% {transform: translateX(-68%); }
+    70% {transform: translateX(-68%); }
+    75% {transform: translateX(0); }
+    100% {transform: translateX(0); }
+}
+
+.slides {
+    display: flex;
+    width: 300%;
+    transition: transform 500ms ease-in-out;
+    animation: slideAnimation 9s infinite ease-in-out;
+}
+
+
 .music__wrapper {
     display: flex;
     flex-direction: column;
@@ -281,4 +373,35 @@ FOOTER
 .footer__social--link {
     margin-right: 16px;
     color: #006b3c;
+}
+
+.footer__social--link:hover {
+    color: #4b0082;
+}
+
+/*  MENU PAGES */
+
+.menu__heading {
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.menu__items {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 640px;
+}
+
+.item__main,
+ .item__description {
+    display: flex;
+    justify-content: space-between;
+}
+
+.item__main {
+    margin-top: 16px;
+}
+
+.item__description {
+    margin: 8px 0;
 }

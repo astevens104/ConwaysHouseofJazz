@@ -14,13 +14,6 @@
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
     ></script>
-    <script type="text/javascript">
-      (function () {
-        emailjs.init({
-          publicKey: "pLloMiUmOyGNkTeZM",
-        });
-      })();
-    </script>
   </head>
 
   <body>
@@ -37,10 +30,15 @@
             >About
           </a>
         </li>
-        <li class="nav__link">
-          <a href="./DGMenu.html" target="_blank" class="link__hover-effect"
-            >Menu
-          </a>
+        <li class="nav__link dropdown">
+          <a href="javascript:void(0)" class="drop__btn">Menu</a>
+          <div class="dropdown__content">
+            <a class="dropdown__list--item" href="/appetizers.html">Appetizers</a>
+            <a class="dropdown__list--item" href="/soupandsalad.html">Soup & Salad</a>
+            <a class="dropdown__list--item" href="#">Burgers</a>
+            <a class="dropdown__list--item" href="#">Creole Favorites</a>
+            <a class="dropdown__list--item" href="#">Desserts</a>
+          </div>
         </li>
         <li class="nav__link">
           <a href="#music" class="link__hover-effect">Music </a>
@@ -62,8 +60,8 @@
     <section id="header">
       <div class="container">
         <div class="row">
-            <div class="heading__wrapper">
-          <h1 class="heading">Welcome to Conway's House of Jazz!</h1>
+          <div class="heading__wrapper">
+            <h1 class="heading">Welcome to Conway's House of Jazz!</h1>
           </div>
           <div class="splash">
             <div class="splash__wrapper">
@@ -96,6 +94,20 @@
     <section id="music">
       <div class="container">
         <div class="row">
+          <div class="slider">
+            <div class="slides">
+              <div class="slide">
+                <img src="/Assets/Pre-open Ron on kit.jpg" alt="">
+              </div>
+              <div class="slide">
+                <img src="/Assets/Week 2 Tony in the house.jpg" alt="">
+              </div>
+              <div class="slide">
+                <img src="/Assets/Week 2 Mel.jpg" alt="">
+              </div>
+            </div>
+          </div>
+          <h2 class="slideshow__content">Do we need a title?</h2>
           <div class="music__wrapper">
             <h1 class="music__title">Upcoming Talent!</h1>
             <div class="calendar__wrapper">
@@ -135,38 +147,34 @@
       <div class="row footer__row">
         <div class="footer__copyright">&copy 2024 Conways House of Jazz</div>
         <div class="footer__social--list">
-          <a
-            href="https://x.com/"
-            target="_blank"
-            class="footer__social--link link__hover--efect"
-          >
+          <a href="https://x.com/" target="_blank" class="footer__social--link">
             <i class="fab fa-x-twitter"></i>
           </a>
           <a
             href="https://www.facebook.com/"
             target="_blank"
-            class="footer__social--link link__hover--efect"
+            class="footer__social--link"
           >
             <i class="fab fa-facebook-f"></i>
           </a>
           <a
             href="https://www.yelp.com/"
             target="_blank"
-            class="footer__social--link link__hover--efect"
+            class="footer__social--link"
           >
             <i class="fab fa-yelp"></i>
           </a>
           <a
             href="https://www.google.com/"
             target="_blank"
-            class="footer__social--link link__hover--efect"
+            class="footer__social--link"
           >
             <i class="fab fa-google"></i>
           </a>
           <a
             href="https://www.instagram.com/"
             target="_blank"
-            class="footer__social--link link__hover--efect"
+            class="footer__social--link"
           >
             <i class="fab fa-instagram"></i>
           </a>
