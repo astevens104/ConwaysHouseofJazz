@@ -405,3 +405,15 @@ FOOTER
 .item__description {
     margin: 8px 0;
 }
+
+.burger__description {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+    padding-bottom: 16px;
+}
+
+.last__item {
+    margin-top: 24px;
+}
